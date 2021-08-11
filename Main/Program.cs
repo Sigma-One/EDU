@@ -4,11 +4,10 @@
 namespace Main {
     internal class Program {
         private static void Main(string[] args) {
-            Whistle duckWhistle = new Whistle("Quack");
-            Whistle roosterWhistle = new Whistle("Peef");
+            Door alexander = new Door();
             
-            duckWhistle.MakeSound();
-            roosterWhistle.MakeSound();
+            alexander.Knock();
+            alexander.Knock();
         }
     }
 }
