@@ -4,9 +4,13 @@
 namespace Main {
     internal class Program {
         private static void Main(string[] args) {
-            Product banana = new Product("Banana", 13, 1.1);
+            Debt debt = new Debt(25, 1.1);
             
-            banana.PrintProduct();
+            debt.PrintAmount();
+            debt.WaitOneYear();
+            debt.PrintAmount();
+            debt.WaitOneYear();
+            debt.PrintAmount();
         }
     }
 }
