@@ -4,10 +4,9 @@
 namespace Main {
     internal class Program {
         private static void Main(string[] args) {
-            Door alexander = new Door();
+            Product banana = new Product("Banana", 13, 1.1);
             
-            alexander.Knock();
-            alexander.Knock();
+            banana.PrintProduct();
         }
     }
 }
