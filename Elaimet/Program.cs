@@ -18,12 +18,20 @@ namespace Elaimet {
         private static void Main(string[] args) {
             Horse horse = new Horse();
 
-            Console.WriteLine("name  : " + horse.Name + "\nweight : " + horse.Weight + "\n");
+            Cat catA = new Cat();
+            catA._name = "spam";
+            Console.WriteLine("Cat 1 name : " + catA.Name);
+            catA.Name = "eggs";
+            Console.WriteLine("Cat 1 name : " + catA.Name);
+
+            Cat catB = new Cat(5, "foobar");
+            Console.WriteLine("Cat 2 name : " + catB.Name + "\nCat 2 age  : " + catB.Age);
+            /*Console.WriteLine("name  : " + horse.Name + "\nweight : " + horse.Weight + "\n");
 
             horse.Name = "Histamiini";
             horse.Weight = 89;
 
-            Console.WriteLine("name  : " + horse.Name + "\nweight : " + horse.Weight);
+            Console.WriteLine("name  : " + horse.Name + "\nweight : " + horse.Weight);*/
         }
     }
 }
