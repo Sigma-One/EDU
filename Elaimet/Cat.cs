@@ -2,8 +2,6 @@ namespace Elaimet {
     public class Cat {
         private int _age;
         private string _name;
-        
-        public Cat() {}
 
         public Cat(int age = 0, string name = "Miuku") {
             this._age = age;
@@ -12,6 +10,10 @@ namespace Elaimet {
 
         public int GetAge() {
             return this._age;
+        }
+
+        public override string ToString() {
+            return "Cat: " + this._name + ", age " + this._age;
         }
 
         public bool SetAge(int age) {

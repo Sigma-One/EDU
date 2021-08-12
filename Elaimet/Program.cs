@@ -16,13 +16,9 @@
 namespace Elaimet {
     internal class Program {
         private static void Main(string[] args) {
-            Cat cat = new Cat(name: "katti");
-
-            Console.WriteLine(cat.SetName("Anneli"));
-            Console.WriteLine(cat.GetName());
+            Cat cat = new Cat();
             
-            Console.WriteLine(cat.SetName("Hilda"));
-            Console.WriteLine(cat.GetName());
+            Console.WriteLine(cat);
         }
     }
 }
