@@ -4,18 +4,9 @@
 namespace Main {
     internal class Program {
         private static void Main(string[] args) {
-            Measure m = new Measure();
-
-            while (!m.full()) {
-                Console.WriteLine("Not Full, currently " + m.value());
-                m.add();
-            }
+            PaymentCard card = new PaymentCard(50);
             
-            Console.WriteLine("Full, currently " + m.value());
-            
-            m.subtract();
-            
-            Console.WriteLine("Not Full, currently " + m.value());
+            Console.WriteLine(card);
         }
     }
 }
