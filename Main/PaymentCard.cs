@@ -11,10 +11,12 @@ namespace Main {
 
         public void EatAffordably() {
             this._saldo -= 2.60;
+            if (this._saldo < 0) { this._saldo += 2.60; }
         }
 
         public void EatTastily() {
             this._saldo -= 4.60;
+            if (this._saldo < 0) { this._saldo += 4.60; }
         }
         
         public override String ToString() {
