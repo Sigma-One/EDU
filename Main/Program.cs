@@ -4,16 +4,27 @@
 namespace Main {
     internal class Program {
         private static void Main(string[] args) {
-            PaymentCard card = new PaymentCard(5);
+            PaymentCard card_a = new PaymentCard(20);
+            PaymentCard card_b = new PaymentCard(30);
             
-            card.Charge(15);
+            card_a.EatTastily();
+            card_b.EatAffordably();
             
-            Console.WriteLine(card);
+            Console.WriteLine("Pekka: " + card_a);
+            Console.WriteLine("Matti: " + card_b);
             
-            card.Charge(10);
-            card.Charge(200);
+            card_a.Charge(20);
+            card_b.EatTastily();
             
-            Console.WriteLine(card);
+            Console.WriteLine("Pekka: " + card_a);
+            Console.WriteLine("Matti: " + card_b);
+            
+            card_a.EatAffordably();
+            card_b.EatAffordably();
+            card_b.Charge(50);
+            
+            Console.WriteLine("Pekka: " + card_a);
+            Console.WriteLine("Matti: " + card_b);
         }
     }
 }
