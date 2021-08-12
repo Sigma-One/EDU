@@ -4,13 +4,9 @@
 namespace Main {
     internal class Program {
         private static void Main(string[] args) {
-            Debt debt = new Debt(25, 1.1);
+            MusicTrack garden = new MusicTrack("In The Garden", 10910);
             
-            debt.PrintAmount();
-            debt.WaitOneYear();
-            debt.PrintAmount();
-            debt.WaitOneYear();
-            debt.PrintAmount();
+            Console.WriteLine("Track " + garden.Name + " length is " + garden.Length + " seconds");
         }
     }
 }
