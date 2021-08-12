@@ -6,14 +6,13 @@ namespace Main {
         private static void Main(string[] args) {
             PaymentCard card = new PaymentCard(5);
             
-            Console.WriteLine(card);
-            
-            card.EatTastily();
+            card.Charge(15);
             
             Console.WriteLine(card);
             
-            card.EatTastily();
-
+            card.Charge(10);
+            card.Charge(200);
+            
             Console.WriteLine(card);
         }
     }
