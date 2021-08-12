@@ -4,9 +4,18 @@
 namespace Main {
     internal class Program {
         private static void Main(string[] args) {
-            MusicTrack garden = new MusicTrack("In The Garden", 10910);
+            Measure m = new Measure();
+
+            while (!m.full()) {
+                Console.WriteLine("Not Full, currently " + m.value());
+                m.add();
+            }
             
-            Console.WriteLine("Track " + garden.Name + " length is " + garden.Length + " seconds");
+            Console.WriteLine("Full, currently " + m.value());
+            
+            m.subtract();
+            
+            Console.WriteLine("Not Full, currently " + m.value());
         }
     }
 }
