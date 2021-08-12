@@ -9,6 +9,14 @@ namespace Main {
             this._saldo = saldo;
         }
 
+        public void EatAffordably() {
+            this._saldo -= 2.60;
+        }
+
+        public void EatTastily() {
+            this._saldo -= 4.60;
+        }
+        
         public override String ToString() {
             return "There are " + _saldo + " euros on the card";
         }

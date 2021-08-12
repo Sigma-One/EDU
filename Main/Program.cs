@@ -7,6 +7,15 @@ namespace Main {
             PaymentCard card = new PaymentCard(50);
             
             Console.WriteLine(card);
+            
+            card.EatAffordably();
+            
+            Console.WriteLine(card);
+            
+            card.EatTastily();
+            card.EatAffordably();
+            
+            Console.WriteLine(card);
         }
     }
 }
